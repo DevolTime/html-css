@@ -1,0 +1,19 @@
+body{
+    background-color: rgba(0, 0, 0, 0.362);
+}
+
+p {
+    color: rgb(86, 21, 139); 
+    font-size: 20px; /*Tamaño */
+    font-weight: bold; /* Grosor */
+    font-family: "Outfit"; /*Tipo Letra/* */ */
+    font-style: italic; /* estilo - cursiva  */
+    text-transform: capitalize; 
+    text-shadow: 0px 0px 5px blue; /* sombra */
+    line-height: 18px; /* espacio entre lineas */
+    letter-spacing: 4px;
+}
+
+h1{
+    text-align: center;
+}
