@@ -39,6 +39,7 @@ ul{
     background-color: blanchedalmond;
 }
 
-.list {
-    
+.sub {
+    color: red;
+    text-transform: uppercase;
 }
