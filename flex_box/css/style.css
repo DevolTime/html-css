@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.imag {
+    width: 60px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(0, 255, 255, 0.614);
+}
+
+ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
