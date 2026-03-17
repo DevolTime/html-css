@@ -1,0 +1,30 @@
+.box{
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
+.box2{
+    background-color: blue;
+
+}
+
+.box3{
+    background-color: green;
+}
+
+.box4{
+    background-color: yellow;
+}
+
+@media (max-width: 600px){
+    
+}
+
+
+/* 
+position: absolute; mantiene la posición asignada
+position: fixed;    se fija en relación a la ventana
+position: relative; todas se juntan en relación a la posición inicial
+position: sticky;   se fija en relación a la posición inicial
+position: static;
+*/

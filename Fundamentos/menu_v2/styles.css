@@ -1,0 +1,58 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+header{
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2.5rem;
+    height: 8rem;
+    position: relative;
+}
+
+.logo_menu, .logo{
+    width: 4rem;
+}
+
+#toggle_menu{
+    display: none;
+}
+
+.menun_list{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.menu_link{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+@media (max-width: 768px){
+    .menu{
+        position: absolute;
+        top: 8rem;
+        left: 0;
+        width: 100%;
+        height: 0rem;
+        overflow: hidden;
+    }
+    .menun_list{
+        background-color: red;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 8rem;
+    }
+}
+
