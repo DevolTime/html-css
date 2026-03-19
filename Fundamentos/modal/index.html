@@ -4,67 +4,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Netflix Login</title>
     <link rel="stylesheet" href="index.css">
     <link rel="icon" href="img/icon.png">
 </head>
 
 <body>
+    <div class="header">
+        <div class="logo">NETFLIX</div>
+    </div>
 
-    <main>
-        <section class="logo1">
-            <div class="logo">
-                <img src="img/logo.png" alt="logo de netflix">
+    <div class="container">
+        <div class="content">
+            <h1>Ingresa tu info para iniciar sesión</h1>
+            <div class="subtitle">
+                O bien, comienza con una cuenta nueva.
             </div>
-        </section>
-        <div>
-            <br>
-            <hr><br>
+
+            <form action="">
+                <label for="login"></label>
+                <input type="text" id="login" name="login" placeholder="Email o número de celular" required>
+                <button type="submit">Continuar</button>
+            </form>
+
+            <!-- BOTÓN HELP -->
+            <div class="help" onclick="toggleHelp()">
+                Obtener ayuda ▼
+            </div>
+
+            
+
+            <!-- CONTENIDO DESPLEGABLE -->
+            <div class="dropdown" id="helpMenu">
+                <a href="#">¿Olvidaste tu email o número de celular?</a>
+                <a href="#">Obtén más información sobre el inicio de sesión</a>
+            </div>
+
+            <div class="small">
+                Esta página está protegida por Google reCAPTCHA para comprobar que no eres un robot. 
+            </div>
+
         </div>
-        <section class="continer">
-            <div class="texto">
-                <h1 class="titulo1">Ingresa tu info para iniciar sesión</h1>
-                <h3 class="sub">O bien, comienza con una cuenta nueva.</h3>
-            </div>
+    </div>
 
-            <div class="formulario">
-                <form action="">
-                    <label for="email"></label>
-                    <input class="correo" type="email" name="email" id="email" placeholder="Email o número de celular"
-                        required>
-                    <button type="submit" class="btn-menu">Continuar</button>
-                </form>
-            </div>
-            <section class="info-text">
-                <details class="info">
-                    <summary class="btn-help">Obtener ayuda</summary>
-                    <ul class="lista">
-                        <li class="lista_help help1">¿Olvidaste tu email o número de celular?</li>
-                        <li class="lista_help">Obtén más información sobre el inicio de sesión</li>
-                    </ul>
-                </details>
+    <script>
+        function toggleHelp() {
+            const menu = document.getElementById("helpMenu");
+            menu.classList.toggle("active");
+        }
+    </script>
 
-                <div class="info_list">
-                    <p class="p_info">Esta página está protegida por Google reCAPTCHA para comprobar que no eres un
-                        robot.
-                    </p>
-                    <details>
-                        <summary class="info-btn">Mas info</summary>
-                        <ul class="">
-                            <li class="p_info">La información recopilada por Google reCAPTCHA está sujeta a la Política
-                                de
-                                privacidad y a
-                                las Condiciones de servicio de Google, y se utiliza para proporcionar, mantener y
-                                mejorar el
-                                servicio de reCAPTCHA, así como para fines generales de seguridad (Google no la utiliza
-                                para
-                                personalizar publicidad).</li>
-                        </ul>
-                    </details>
-                </div>
-            </section>
-        </section>
-    </main>
+
 </body>
 
 </html>
