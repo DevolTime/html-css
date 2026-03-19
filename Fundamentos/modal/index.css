@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 65.2%;
+}
+
+body{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #8e0e00 -100%, #1f1c18 70%);
+}
+
+img{
+    width: 90px;
+    height: 20px;
+}
+
+.logo1{
+display: flex;
+justify-content: start;
+margin: 20px 0 0 20px;
+}
+
+
+.titulo1{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    color: white;
+    font-weight: bold;
+    margin: 80px 0 0 0;
+}
+.sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    margin: 10px 0 0 0;
+}
+
+.formulario{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0 0 0;
+}
+
+.btn-menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: 20px;
+    margin: 10px 0 0 0;
+    padding: 0 182px;
+}
+
+.correo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: black;
+    border: none;
+    font-size: 20px;
+    margin: 10px 0 0 0;
+    padding: 0 100px;
+
+}
+
+/* .info_list{
+    color: darkgrey;
+    padding: 50px 0 0 0;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+} */
+
+/* .info-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} */
+
+.info-btn{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.info{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: start;
+    color: white;
+    padding: auto;
+}
+
+.lista_help{
+    text-align: center;
+    justify-content: start;
+    display: flex;
+}
+.help1{
+    width: 460px;
+}
+
+.btn-help{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: end;
+}
+
+.p_info{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
