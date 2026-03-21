@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="225.css">
+</head>
+
+<body>
+
+    <!-- Botón para abrir el modal -->
+    <button id="openModal">Abrir Modal</button>
+
+    <!-- Estructura del modal -->
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+
+            <h2>Título del Modal</h2>
+            <p>Este es un ejemplo de ventana modal con HTML y CSS.</p>
+        </div>
+    </div>
+
+    <script>
+        // Referencias
+        const modal = document.getElementById("myModal");
+        const btn = document.getElementById("openModal");
+        const span = document.querySelector(".close");
+
+        // Abrir modal
+        btn.onclick = () => modal.style.display = "block";
+
+        // Cerrar modal al hacer clic en la X
+        span.onclick = () => modal.style.display = "none";
+
+        // Cerrar modal al hacer clic fuera del contenido
+        window.onclick = (event) => {
+            if (event.target === modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
+
+</body>
+
+</html>

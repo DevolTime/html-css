@@ -1,0 +1,55 @@
+    /* Fondo oscuro del modal */
+    .modal {
+        display: none; /* Oculto por defecto */
+        position: fixed;
+        z-index: 1000;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    .btn{
+        background-color: red;
+        display: grid;
+        place-items: center;
+        border: none;
+        margin: 23% auto;
+        height: 50px;
+        width: 110px;
+        border-radius: 6%;
+    }
+
+
+    /* Contenido del modal */
+    .modal-content {
+        height: 100vh;
+        background: radial-gradient(circle at top, #8b0000, #000);
+        color: white;
+        margin: 10% auto;
+        padding: 20px;
+        border-radius: 8px;
+        width: 80%;
+        max-width: 400px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        animation: fadeIn 0.3s ease;
+    }
+
+    /* Botón de cierre */
+    .close {
+        color: #aaa;
+        float: right;
+        font-size: 24px;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    .close:hover {
+        color: #000;
+    }
+
+    /* Animación */
+    @keyframes fadeIn {
+        from {opacity: 0; transform: translateY(-20px);}
+        to {opacity: 1; transform: translateY(0);}
+    }
